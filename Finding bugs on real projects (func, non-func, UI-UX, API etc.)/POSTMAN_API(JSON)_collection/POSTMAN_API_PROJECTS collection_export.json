@@ -1,0 +1,671 @@
+{
+	"info": {
+		"_postman_id": "851d6ea0-0de1-444b-9d42-be4879aeee1c",
+		"name": "Home Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21995741",
+		"_collection_link": "https://cloudy-water-332211.postman.co/workspace/Beetroot~ab826e26-52d5-4362-b925-75f830357d20/collection/21995741-851d6ea0-0de1-444b-9d42-be4879aeee1c?action=share&source=collection_link&creator=21995741"
+	},
+	"item": [
+		{
+			"name": "Positive Check",
+			"item": [
+				{
+					"name": "Positive - In body",
+					"item": [
+						{
+							"name": "POST Denzel 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Denzel\",\n    \"age\": 67,\n    \"gender\": \"male\",\n    \"city\": \"NY\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST Denzel 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Denzel-delete\",\n    \"age\": 68,\n    \"gender\": \"male\",\n    \"city\": \"NY\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET through \"body\" is not possible",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"406201ad-6db0-414f-801c-dabe7759bde7\",\n    \"name\": \"Denzel\",\n    \"age\": 67,\n    \"gender\": \"male\",\n    \"city\": \"LA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE through \"body\" is not possible",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Positive - In parameters",
+					"item": [
+						{
+							"name": "POST  through \"parameters\" is not possible",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=406201ad-6db0-414f-801c-dabe7759bde7",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "406201ad-6db0-414f-801c-dabe7759bde7"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE  through \"parameters\" is not possible",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=a68ba9c7-6f2d-43b4-9b1e-d999a24e2eb8",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "a68ba9c7-6f2d-43b4-9b1e-d999a24e2eb8"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Negative Check",
+			"item": [
+				{
+					"name": "Negative - In body",
+					"item": [
+						{
+							"name": "POST Denzel 1 - 5 letters in name",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Denze\",\n    \"age\": 67,\n    \"gender\": \"male\",\n    \"city\": \"NY\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST Denzel 2 - \"malee\" insted of \"male\"",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Denzel-delete\",\n    \"age\": 68,\n    \"gender\": \"malee\",\n    \"city\": \"NY\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET through \"body\" is not possible",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE - HERE IS A BUG - space inside ID code",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \" 406201ad-6db0-414f-801c-dabe7759bde7\",\n    \"name\": \"Denzel\",\n    \"age\": 67,\n    \"gender\": \"male\",\n    \"city\": \"NY\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE through \"body\" is not possible Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Negative - In parameters",
+					"item": [
+						{
+							"name": "POST  through \"parameters\" is not possible",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET - \"idd\" instead of \"id\"",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?idd=406201ad-6db0-414f-801c-dabe7759bde7",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									],
+									"query": [
+										{
+											"key": "idd",
+											"value": "406201ad-6db0-414f-801c-dabe7759bde7"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE  through \"parameters\" is not possible",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE - \"i d\" instead of \"id\"",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?i d=a68ba9c7-6f2d-43b4-9b1e-d999a24e2eb8",
+									"protocol": "https",
+									"host": [
+										"em",
+										"staging",
+										"api",
+										"onereach",
+										"ai"
+									],
+									"path": [
+										"http",
+										"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+										"users"
+									],
+									"query": [
+										{
+											"key": "i d",
+											"value": "a68ba9c7-6f2d-43b4-9b1e-d999a24e2eb8"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
